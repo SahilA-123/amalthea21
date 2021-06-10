@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <title>Amalthea'21 Sponsors</title>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #4d69aa;
+        background-color: white;
+        display: block;
+        transition-property: padding-left;
+      }
+
+      .sidenav a:hover {
+        font-family: "Open Sans Condensed", sans-serif;
+        color: #a3a2b9;
+        padding-left: 64px;
+        transition: 0.8s;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+
+      #icon {
+        margin: 17px;
+        margin-top: 20px;
+        border: 2px solid #dbe6fd;
+        border-radius: 32px;
+        box-shadow: 0 4px 100px 0 blue;
+      }
+
+      #spons {
+        margin: auto;
+        text-align: center;
+        font-size: 71px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #spons {
+          max-width: 470px;
+          font-size: 40px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #spons {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+
+      #spons2 {
+        margin: auto;
+        text-align: center;
+        font-size: 26px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #spons2 {
+          max-width: 470px;
+          font-size: 16px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #spons2 {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+      h4 {
+        font-family: "Times New Roman", Times, serif;
+        /* font-weight: bold; */
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 500px) {
+        h4 {
+          font-size: 20px;
+        }
+      }
+
+      .sponsor1 {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+        grid-gap: 137px;
+        width: 75%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 750px) and (min-width: 450px) {
+        .sponsor1 {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        .sponsor1 {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">HOME</a>
+      <a href="Team.html">OUR TEAM</a>
+      <a href="Sponsors.html">SPONSORS</a>
+      <a href="#"></a>
+    </div>
+
+    <!-- <span id="icon" style="font-size:30px;cursor:pointer" onclick="openNav()">icon.png; </span>  -->
+
+    <input
+      id="icon"
+      type="image"
+      src="icon2.png"
+      name=""
+      value=""
+      onclick="openNav()"
+    />
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <div class="ourspons">
+      <h1 id="spons">Our Sponsors</h1>
+      <h2 id="spons2">Because you power us</h2>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="sponsor1">
+      <div class="sponsor">
+        <a href="https://www.jsw.in/" target="_blank"
+          ><img src="titlespons (1).png" alt="" width="80%" /></a
+        ><br /><br />
+        <h4>Title Sponsor</h4>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.gsfclimited.com/" target="_blank"
+          ><img src="associatespons.png" alt="" width="24%" /></a
+        ><br /><br />
+        <h4>Associate Sponsor</h4>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="sponsor1">
+      <div class="sponsor">
+        <a href="https://www.ril.com/" target="_blank"
+          ><img src="silverspons.png" alt="" width="80%" /></a
+        ><br /><br />
+        <h4>Silver Sponsor</h4>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.gujaratmetrorail.com/" target="_blank"
+          ><img src="goldspons.png" alt="" width="47%" /></a
+        ><br /><br />
+        <h4>Gold Sponsor</h4>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="sponsor1">
+      <div class="sponsor">
+        <a href="https://www.gidb.org/" target="_blank"
+          ><img src="induspartner.png" alt="" width="70%" /></a
+        ><br /><br />
+        <h4>Industrial Partner</h4>
+      </div>
+      <div class="sponsor">
+        <a
+          href="https://www.autodesk.in/?mktvar002=afc_in_deeplink&AID=13084956&PID=8206971&SID=jkp_Cj0KCQjwzYGGBhCTARIsAHdMTQzpV7O-hJkhTstnyZi3KTksd8Q6orOExP4Q9C6eeulwoVvoCh2GoLYaAqoaEALw_wcB&cjevent=4f715d7dc92711eb838614fd0a18050c&affname=8206971_13084956&cjdata=MXxOfDB8WXww"
+          target="_blank"
+          ><img src="techpartner.png" alt="" width="67%" /></a
+        ><br /><br />
+        <h4>Technical Partner</h4>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="sponsor1">
+      <div class="sponsor">
+        <a href="https://www.wiley.com/en-in" target="_blank"
+          ><img src="knowledgepartner.png" alt="" width="75%" /></a
+        ><br /><br />
+        <h4>Knowledge Partner</h4>
+      </div>
+      <div class="sponsor">
+        <a href="https://gil.gujarat.gov.in/" target="_blank"
+          ><img src="networkpartner.png" alt="" width="47%" /></a
+        ><br /><br />
+        <h4>Network Partner</h4>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

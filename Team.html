@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <title>Amalthea'21 Team</title>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        /* box-shadow: 0 4px 30px 0 blue; */
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #4d69aa;
+        background-color: white;
+        display: block;
+        transition-property: padding-left;
+      }
+
+      .sidenav a:hover {
+        font-family: "Open Sans Condensed", sans-serif;
+        color: #a3a2b9;
+        padding-left: 64px;
+        transition: 0.8s;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+
+      #icon {
+        margin: 17px;
+        margin-top: 20px;
+        border: 2px solid #dbe6fd;
+        border-radius: 32px;
+        box-shadow: 0 4px 100px 0 blue;
+      }
+
+      #team {
+        margin: auto;
+        text-align: center;
+        font-size: 71px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #team {
+          max-width: 470px;
+          font-size: 40px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #team {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+
+      #core {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #core {
+          max-width: 470px;
+          font-size: 24px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #core {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      .corecontainer {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        text-align: center;
+        grid-gap: 10px;
+        width: 80%;
+        margin: auto;
+      }
+
+      .marketingcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+        grid-gap: 10px;
+        width: 40%;
+        margin: auto;
+      }
+
+      .eventscontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+        grid-gap: 10px;
+        width: 40%;
+        margin: auto;
+      }
+
+      .webappcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+        grid-gap: 10px;
+        width: 40%;
+        margin: auto;
+      }
+
+      .designcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+        grid-gap: 10px;
+        width: 40%;
+        margin: auto;
+      }
+
+      h4 {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 750px) and (min-width: 450px) {
+        .corecontainer {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .marketingcontainer {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .designcontainer {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .eventscontainer {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .webappcontainer {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        .corecontainer {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .marketingcontainer {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .eventscontainer {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .webappcontainer {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+
+        .designcontainer {
+          display: grid;
+          grid-template-columns: repeat(1, 2fr);
+          text-align: center;
+          grid-gap: 10px;
+          width: 80%;
+          margin: auto;
+        }
+      }
+
+      #marketing {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #marketing {
+          max-width: 470px;
+          font-size: 24px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #marketing {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      #events {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      #webapp {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      #design {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #events {
+          max-width: 470px;
+          font-size: 24px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #events {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #webapp {
+          max-width: 470px;
+          font-size: 24px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #webapp {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 650px) and (min-width: 470px) {
+        #design {
+          max-width: 470px;
+          font-size: 24px;
+          margin: auto;
+          padding: auto;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        #design {
+          overflow-x: hidden;
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">HOME</a>
+      <a href="Team.html">OUR TEAM</a>
+      <a href="Sponsors.html">SPONSORS</a>
+      <a href="#"></a>
+    </div>
+
+    <!-- <span id="icon" style="font-size:30px;cursor:pointer" onclick="openNav()">icon.png; </span>  -->
+
+    <input
+      id="icon"
+      type="image"
+      src="icon2.png"
+      name=""
+      value=""
+      onclick="openNav()"
+    />
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <div class="ourteam">
+      <h1 id="team">Our Team</h1>
+    </div>
+
+    <br /><br />
+
+    <h2
+      id="core"
+      style="font-family: 'Times New Roman', Times, serif; font-weight: bold"
+    >
+      Core Members
+    </h2>
+
+    <br /><br />
+    <div class="corecontainer">
+      <div class="coremember">
+        <img src="core1.png" width="80%" alt="" /> <br />
+        <h4>Nikharv Shah</h4>
+        <h5>+91 9484801127</h5>
+      </div>
+      <div class="coremember">
+        <img src="core2.png" alt="" width="80%" /> <br />
+        <h4>Preet Shah</h4>
+        <h5>+91 9537373663</h5>
+      </div>
+      <div class="coremember">
+        <img src="core3.png" alt="" width="80%" /> <br />
+        <h4>Sanjay Venkitesh</h4>
+        <h5>+91 7823991431</h5>
+      </div>
+      <div class="coremember">
+        <img src="core4.png" alt="" width="80%" /> <br />
+        <h4>Xhitij Choudhary</h4>
+        <h5>+91 9833171140</h5>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <h2
+      id="marketing"
+      style="font-family: 'Times New Roman', Times, serif; font-weight: bold"
+    >
+      Marketing
+    </h2>
+    <br /><br />
+    <div class="marketingcontainer">
+      <div class="coremember">
+        <img src="marketing1.png" alt="" width="80%" />
+        <h4>Arushi Arnav</h4>
+        <h5>+91 8294392913</h5>
+      </div>
+      <div class="coremember">
+        <img src="marketing2.png" alt="" width="80%" />
+        <h4>Raavi Patel</h4>
+        <h5>+91 8511185880</h5>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <h2
+      id="events"
+      style="font-family: 'Times New Roman', Times, serif; font-weight: bold"
+    >
+      Events
+    </h2>
+    <br /><br />
+
+    <div class="eventscontainer">
+      <div class="coremember">
+        <img src="events1.png" alt="" width="80%" />
+        <h4>Adarsh Golait</h4>
+        <h5>+91 8602772537</h5>
+      </div>
+      <div class="coremember">
+        <img src="events2.png" alt="" width="80%" />
+        <h4>Videh Patel</h4>
+        <h5>+91 8849885100</h5>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <h2
+      id="webapp"
+      style="font-family: 'Times New Roman', Times, serif; font-weight: bold"
+    >
+      Web and App Developers
+    </h2>
+    <br /><br />
+
+    <div class="webappcontainer">
+      <div class="coremember">
+        <img src="web1.png" alt="" width="80%" />
+        <h4>Gaurav Viramgami</h4>
+        <h5>+91 7874626478</h5>
+      </div>
+      <div class="coremember">
+        <img src="web2.png" alt="" width="80%" />
+        <h4>Reuben Devanesan</h4>
+        <h5>+91 9867608536</h5>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <h2
+      id="design"
+      style="font-family: 'Times New Roman', Times, serif; font-weight: bold"
+    >
+      Design
+    </h2>
+    <br /><br />
+
+    <div class="designcontainer">
+      <div class="coremember">
+        <img src="design2.png" alt="" width="80%" />
+        <h4>Hrushti Naik</h4>
+        <h5>+91 7575083133</h5>
+      </div>
+      <div class="coremember">
+        <img src="design1.png" alt="" width="80%" />
+        <h4>Nipun Mahajan</h4>
+        <h5>+91 8082598900</h5>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
